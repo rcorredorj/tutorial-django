@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
 <body>
-    <h1> Only a <a href="">test</a> </h1>
-    <div>{% for post in posts %} <a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a>  {% endfor %}</div>
+    <div> {{post.title}}</div>
 </body>
 </html>
