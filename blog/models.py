@@ -14,4 +14,4 @@ class Post(models.Model):
         self.save()
 
     def __str__(self):
-        return self.author + ':' + self.title
+        return '%s:%s' % (self.author , self.title)
